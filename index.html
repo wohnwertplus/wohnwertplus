@@ -1,34 +1,128 @@
 <!DOCTYPE html>
-<html lang='de'>
+<html lang="de">
 <head>
-<meta charset='UTF-8'>
-<title>wohnwert+</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>wohnwert plus</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background-color: #fdfdfb;
+            color: #1f1f1f;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+        }
+        header img {
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        h1 { display: none; }
+        .main-title {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #b59f89;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-between;
+        }
+        .tile {
+            flex: 1 1 30%;
+            background-color: #e8eaf0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        }
+        .tile h3 { margin-top: 0; color: #0f2b44; }
+        .tile p { font-size: 0.95rem; line-height: 1.4; }
+        .modules {
+            background-color: #f3f0ec;
+            border-left: 5px solid #b59f89;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        .modules h2 { margin-top: 0; color: #0f2b44; }
+        .modules ul { columns: 2; padding-left: 1rem; }
+        .modules li { margin-bottom: 0.5rem; }
+        .kontakt { text-align: center; margin-top: 3rem; }
+        footer {
+            text-align: center;
+            font-size: 0.85rem;
+            padding: 2rem;
+            color: #999;
+        }
+        footer a { color: #999; text-decoration: none; }
+        @media(max-width: 768px) {
+            .grid { flex-direction: column; }
+            .modules ul { columns: 1; }
+        }
+    </style>
 </head>
 <body>
-<header style='background:#001f3f; color:white; padding:1em; text-align:center;'>
-<img src='logo.png' alt='Logo' style='height:80px;'>
-<h1>wohnwert+</h1>
-<p>Einrichten, Pflegen, Vermieten – Kurzzeitvermietung mit System</p>
-</header>
-<main style='padding:2em;'>
-<h2>16 Jahre Erfahrung in der Immobilienumnutzung – individuell, flexibel, wirtschaftlich.</h2>
-<div style='display:flex;gap:1em;margin-top:2em;'>
-<div style='flex:1;background:#eee;padding:1em;border-left:5px solid #8b5e3c;'>
-<strong>Bestehende Wohnungen</strong><br>
-Umnutzung, Einrichtung, Service – alles aus einer Hand.
-</div>
-<div style='flex:1;background:#eee;padding:1em;border-left:5px solid #8b5e3c;'>
-<strong>Häuser und Hotels</strong><br>
-Planung, Umbau und Optimierung für Kurzzeitvermietung.
-</div>
-<div style='flex:1;background:#eee;padding:1em;border-left:5px solid #8b5e3c;'>
-<strong>Freiflächen</strong><br>
-Beratung & Bau von Tiny-Häusern oder Wohnmobilstellplätzen.
-</div>
-</div>
-</main>
-<footer style='background:#001f3f; color:white; padding:1em; text-align:center;'>
-© 2025 Wohnwert+ UG (haftungsbeschränkt), Heiligengeiststraße 6–8, 26121 Oldenburg
-</footer>
+    <header>
+        <img src="logo.png" alt="wohnwert plus Logo" />
+    </header>
+
+    <div class="main-title">16 Jahre Erfahrung in der Immobilienumnutzung – individuell, flexibel, wirtschaftlich.</div>
+
+    <div class="container">
+        <h2 style="color:#0f2b44;">Was möchten Sie umnutzen?</h2>
+        <div class="grid">
+            <div class="tile">
+                <h3>Wohnung / Apartment</h3>
+                <p>Sie besitzen eine Wohnung oder ein kleines Objekt und möchten diese professionell zur Kurzzeitvermietung umnutzen.</p>
+            </div>
+            <div class="tile">
+                <h3>Haus / Hotel / MFH</h3>
+                <p>Sie planen die Umnutzung größerer Immobilien – vom Einfamilienhaus bis zur Hotelanlage – für neue Konzepte.</p>
+            </div>
+            <div class="tile">
+                <h3>Grundstück / Fläche</h3>
+                <p>Sie haben ein Grundstück und möchten es für Tiny Houses, Wohnmobilstellplätze oder ähnliche Konzepte nutzen.</p>
+            </div>
+        </div>
+
+        <div class="modules">
+            <h2>Unsere Leistungen – flexibel kombinierbar</h2>
+            <ul>
+                <li>Beratung & Wirtschaftlichkeitsberechnung</li>
+                <li>Architektur & Innenarchitektur</li>
+                <li>Genehmigung & Statik</li>
+                <li>Umbau oder Neubau</li>
+                <li>Einrichtung & Möblierung</li>
+                <li>Reinigungsservice & Gästebetreuung</li>
+                <li>Buchungssysteme & Optimierung</li>
+                <li>Technische Gebäudedienstleistungen</li>
+                <li>Qualitätsmanagement</li>
+                <li>Betreuung laufender Vermietungen</li>
+            </ul>
+        </div>
+
+        <div class="kontakt">
+            <h2>Kontakt</h2>
+            <p>info@wohnwert.plus</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; wohnwert plus – 2025<br/>
+        <a href="impressum.html">Impressum</a>
+    </footer>
 </body>
 </html>
